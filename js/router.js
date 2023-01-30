@@ -16,7 +16,7 @@ export class Router {
 
   handle() {
     const { pathname } = window.location
-    const route = this.routes[pathname] || this.routes[404]
+    const route = this.routes[pathname] || this.routes['/']
 
     const firstNav = document.querySelector('nav :nth-child(2)')
     const secondNav = document.querySelector('nav :nth-child(3)')
